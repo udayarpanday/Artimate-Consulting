@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="bg-white px-8">
+    <main className="bg-white md:px-8">
       {/* Hero */}
       <section className="border-b bg-white">
         <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 py-10 md:grid-cols-2 md:py-14">

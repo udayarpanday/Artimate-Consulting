@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function SiteFooter() {
   return (
-    <footer className="border-t bg-white px-8">
+    <footer className="border-t bg-white md:px-8">
       <div className="container mx-auto grid gap-6 px-4 py-8 sm:grid-cols-2 md:grid-cols-3">
         <div>
           <div className="text-lg font-semibold text-[#0A2540]">Artimate Consulting</div>

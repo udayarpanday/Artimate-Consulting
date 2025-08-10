@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="min-h-screen bg-white text-[#0A2540]">
-      <div className="scroll-smooth px-8">
+      <div className="scroll-smooth md:px-8">
         <Hero />
         {/* <TrustedLogos /> */}
         <WhyChooseUs />

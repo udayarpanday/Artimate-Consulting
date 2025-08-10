@@ -7,7 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full px-8 border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full md:px-8 border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2" aria-label="Artimate Consulting Home">
           <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0A2540]">

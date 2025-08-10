@@ -37,7 +37,7 @@ export default function ContactPageClient() {
   }
 
   return (
-    <main className="bg-white px-8">
+    <main className="bg-white md:px-8">
       <section className="border-b bg-white">
         <div className="container mx-auto px-4 py-10 md:py-14">
           <h1 className="text-3xl font-bold tracking-tight text-[#0A2540] md:text-4xl">Contact us</h1>

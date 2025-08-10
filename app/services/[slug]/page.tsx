@@ -30,7 +30,7 @@ export default function ServiceDetailPage({ params }: Props) {
   if (!service) return notFound()
 
   return (
-    <main className="bg-white px-8">
+    <main className="bg-white md:px-8">
       <section className="border-b bg-white">
         <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 py-10 md:grid-cols-2 md:py-14">
           <div className="space-y-4">
