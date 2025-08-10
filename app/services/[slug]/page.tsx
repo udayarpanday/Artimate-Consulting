@@ -5,6 +5,7 @@ import Pointers from "@/components/pointers"
 import { Button } from "@/components/ui/button"
 import { getServiceBySlug, services } from "@/lib/services"
 import { notFound } from "next/navigation"
+import { ArrowLeft } from "lucide-react"
 
 type Props = { params: { slug: string } }
 
@@ -31,6 +32,20 @@ export default function ServiceDetailPage({ params }: Props) {
 
   return (
     <main className="bg-white md:px-8">
+      {/* Back Button */}
+      <div className="text-left w-fit px-4 pt-6">
+        <Button
+          variant="ghost"
+          asChild
+          className="mb-4 flex items-center gap-2 text-[#0A2540] hover:bg-[#0A2540]/5"
+        >
+          <Link href="/services">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Services
+          </Link>
+        </Button>
+      </div>
+
       <section className="border-b bg-white">
         <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 py-10 md:grid-cols-2 md:py-14">
           <div className="space-y-4">

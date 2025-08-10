@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-white py-16 md:py-24">
+    <section id="about" className="w-full bg-white py-16">
       <div className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 md:grid-cols-2">
         <div className="relative order-2 md:order-1">
           <img

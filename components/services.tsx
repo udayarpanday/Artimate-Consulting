@@ -10,7 +10,7 @@ import { services } from "@/lib/services";
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-white py-16 md:py-24">
+    <section id="services" className="w-full bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="mb-10 max-w-2xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-[#FFC72C] bg-[#FFF9E6] px-3 py-1 text-xs font-medium text-[#0A2540]">
@@ -27,36 +27,32 @@ export default function Services() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
-            <Card
-              key={s.slug}
-              className="h-full overflow-hidden border-[#0A2540]/15 transition hover:shadow-md"
-            >
-              <div className="relative aspect-[16/9] w-full overflow-hidden">
-                <img
-                  src={s.heroImage || "/placeholder.svg"}
-                  alt={`${s.title} illustrative image`}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute left-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-[#0A2540] shadow-sm">
-                  <s.icon className="h-5 w-5 text-white" />
+            <Link key={s.slug} href={`/services/${s.slug}`} className="block">
+              <Card
+                className="h-full overflow-hidden border-[#0A2540]/15 transition hover:shadow-md hover:border-[#0A2540]/30"
+              >
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <img
+                    src={s.heroImage || "/placeholder.svg"}
+                    alt={`${s.title} illustrative image`}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute left-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-[#0A2540] shadow-sm">
+                    <s.icon className="h-5 w-5 text-white" />
+                  </div>
                 </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-[#0A2540]">{s.title}</CardTitle>
-                <CardDescription className="text-[#0A2540]/70">
-                  {s.short}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex items-center gap-4">
-                <Link
-                  href={`/services/${s.slug}`}
-                  className="inline-flex items-center text-sm font-medium text-[#2BB673] hover:underline"
-                >
-                  Learn more →
-                </Link>
-              </CardContent>
-            </Card>
+                <CardHeader>
+                  <CardTitle className="text-[#0A2540]">{s.title}</CardTitle>
+                  <CardDescription className="text-[#0A2540]/70">
+                    {s.short}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  {/* Content removed - entire card is now clickable */}
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>

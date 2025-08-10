@@ -41,7 +41,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="w-full bg-white py-16 md:py-24">
+    <section id="contact" className="w-full bg-white py-16">
       <div className="container mx-auto grid grid-cols-1 gap-10 px-4 md:grid-cols-2">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold tracking-tight text-[#0A2540] md:text-3xl">Contact us</h2>

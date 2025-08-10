@@ -25,7 +25,7 @@ const steps = [
 
 export default function Approach() {
   return (
-    <section aria-labelledby="approach-heading" className="bg-white py-16 md:py-24">
+    <section aria-labelledby="approach-heading" className="bg-white py-16 md:py-16">
       <div className="container mx-auto px-4">
         <div className="mb-10 max-w-2xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-[#FFC72C] bg-[#FFF9E6] px-3 py-1 text-xs font-medium text-[#0A2540]">
